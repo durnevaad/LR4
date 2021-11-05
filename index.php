@@ -1,12 +1,6 @@
 <html>
 <head> <title> Сведения о прользователях сайта </title> </head>
 <body>
-<?php
- $link = mysqli_connect("127.0.0.1", "root", "", "users"); 
- if (!$link) {
-    echo "Невозможно подключиться к серверу." ;
-}
-?>
 <h2>Зарегистрированные пользователи:</h2>
 <table border="1">
 		<tr>
@@ -17,6 +11,10 @@
 			<th> Уничтожить</th>
 		</tr>
 <?php	
+$link = mysqli_connect("127.0.0.1", "root", "", "users"); 
+ if (!$link) {
+    echo "Невозможно подключиться к серверу." ;
+}
 $result = mysqli_query($link, "SELECT id_user, user_name, user_e_mail FROM user");
 while ($row=mysqli_fetch_array($result)){
  echo "<tr>";
