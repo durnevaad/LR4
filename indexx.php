@@ -23,8 +23,8 @@ while ($row=mysqli_fetch_array($result)){
  echo "<td>" . $row['brand'] . "</td>";
  echo "<td>" . $row['model'] . "</td>";
  echo "<td>" . $row['internal_volume'] . "</td>";
- echo "<td><a href='editt.php?id=" . $row['id_user']. "'>Редактировать</a></td>"; 
- echo "<td><a href='deletee.php?id=" . $row['id_user']. "'>Удалить</a></td>"; 
+ echo "<td><a href='editt.php?id=" . $row['id_f']. "'>Редактировать</a></td>"; 
+ echo "<td><a href='deletee.php?id=" . $row['id_f']. "'>Удалить</a></td>"; 
  echo "</tr>";}
 print "</table>";
 $num_rows = mysqli_num_rows($result); 
