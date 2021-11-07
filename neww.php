@@ -2,7 +2,7 @@
 <head> <title> Добавление новой модели холодильника </title> </head>
 <body>
 <H2>Добавление новой модели холодильника:</H2>
-<form action="save_neww.php" metod="get">
+<form action="save_neww.php" metod="post">
 Марка:<input name="brand" size="30" type="text">
 <br>Модель: <input name="model" size="30" type="text">
 <br>Тип разморозки: <input name="defrost_type" size="30" type="text">
